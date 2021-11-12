@@ -2,6 +2,8 @@
 
 \usepackage{subfiles}
 
+\newcommand{\sub}[1]{\subfile{sections/#1.tex}}
+
 \title{A Level CS}
 \author{Michael Hallam}
 \begin{document}
@@ -24,8 +26,11 @@
 
 	\pagenumbering{arabic}
 
+	\section{Fundamentals of Data Structures}
+	\sub{datastruct}
+
 	\section{Fundamentals of Functional Programming}
-	\subfile{sections/fp.tex}
+	\sub{fp}
 
 \end{document}
 

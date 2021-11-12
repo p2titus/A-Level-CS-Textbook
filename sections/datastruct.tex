@@ -1,0 +1,29 @@
+\documentclass[../alevelcs.tex]{subfiles}
+\usepackage{listings}
+
+\begin{document}
+	Data structures are an essential part of any computer scientists problem solving toolkit. A solid grasp of the basics will provide a new way of thinking.
+	\tableofcontents
+	\newpage
+
+	\subsection{What is a data structure?}
+	Simply put, a data structure is a way of storing data within memory. In the first chapter, you will have encountered arrays: a simple, intuitive data structure.
+
+	Practically, data structures are in use all the time. Consider the web:
+	\begin{itemize}
+		\item The undo button on a browser will use a \textit{stack} to store previously visited pages. When the button is clicked, the browser will \textit{pop} the \textit{stack} and use the data to return to the previous webpage.
+		\item Web servers will use \textit{queues} to ensure the first person to request access to a resource obtains this access first.
+		\item \textit{Graphs} can be used to represent web pages and the links between them. Google uses \textit{graphs} to represent data, and to order their search results.
+	\end{itemize}
+
+	Data structures are in use in every program.
+
+	\subsection{Arrays}
+	You will have encountered \textit{arrays} in the previous programming chapter, so we won't spend much time revisiting them.
+
+	In the language of linear algebra, a $1D$ array could be used to represent a vector. Similarly, a $2D$ array can be used to represent a Matrix\footnote{Higher dimension arrays also correspond to higher dimensioned concepts, but we won't consider those here}. In typed programming languages, an array will be a collection of data with the same type. This data will be accessed by indexes.
+
+	It may help to imagine an $n \times m$ array as an $n \times m$ grid: each $i,j$ pair will correspond to a square in this grid, and each square will have a value of some kind in it.
+
+	Arrays are traditionally indexed from 0\footnote{This is a convention from C: arrays there are raw pointers to a location in memory, and the index was an offset from that point. Hence, the data at index zero would be at an offset of zero from the pointer (i.e. the pointer itself). Some modern languages like Julia and Matlab start their indexes from 1, as they're designed for translation of mathematical formulae, but this is beyond the scope of the course.} and have their last element at $n - 1$.
+\end{document}
